@@ -2,13 +2,14 @@
 
 ## Current state and sources
 
-- This repository is documentation-only: the application layout in `docs/architecture.md` is planned, not implemented. There are no manifests, lockfiles, build/test scripts, CI workflows, or runnable services yet; do not assume setup or verification commands exist.
+- The repository contains initial backend and frontend scaffolding; most of the application layout in `docs/architecture.md` is still planned. No test projects or CI workflows are configured yet.
+- Build the backend with `dotnet build src/backend/PokemonGames.sln --configuration Release`. Install frontend dependencies with `npm ci` in `src/frontend/`, then build with `npm run build` there.
 - Before implementation, read `docs/architecture.md` (design and business rules), `docs/conventions.md` (implementation and agent workflow), and the relevant item in `docs/backlog.md` (dependencies and acceptance criteria).
 - For backlog work, verify prerequisites before starting dependent tasks, update the task status, and mark it Done only after its acceptance criteria are satisfied.
 
 ## Planned implementation boundaries
 
-- Target stack: React/TypeScript/Vite frontend; ASP.NET Core on .NET 10 with EF Core/PostgreSQL backend. The planned directories are `frontend/`, `backend/`, and `tests/`; see the architecture document before scaffolding.
+- Target stack: React/TypeScript/Vite frontend; ASP.NET Core on .NET 10 with EF Core/PostgreSQL backend. The `tests/` directory is a placeholder; see the architecture document before extending the structure.
 - Backend project dependencies: `Api -> Application + Infrastructure`, `Infrastructure -> Application + Domain`, `Application -> Domain`; `Domain` has no project dependencies and must not reference EF Core, ASP.NET Core, or external services.
 - Keep game rules in the backend, independent of PokéAPI and UI. TanStack Query owns server state; Zustand is for client UI state, not a duplicate of authoritative game state.
 - PokéAPI is for idempotent catalog import only. Gameplay must work offline from PokéAPI after import; the MVP uses IDs 1–150, not all 151 Generation I Pokémon.

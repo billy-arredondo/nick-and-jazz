@@ -39,7 +39,7 @@ Online multiplayer, authentication, and additional games are outside MVP scope.
 
 | Epic  | Name                        | Priority | Status |
 | ----- | --------------------------- | -------- | ------ |
-| EP-01 | Project Foundation          | P0       | Todo   |
+| EP-01 | Project Foundation          | P0       | In Progress |
 | EP-02 | Pokémon Catalog             | P0       | Todo   |
 | EP-03 | Player Management           | P0       | Todo   |
 | EP-04 | Hangman Engine              | P0       | Todo   |
@@ -54,9 +54,9 @@ Online multiplayer, authentication, and additional games are outside MVP scope.
 
 | ID     | Task                                             | Priority | Depends On     | Status |
 | ------ | ------------------------------------------------ | -------- | -------------- | ------ |
-| FND-01 | Initialize monorepo structure                    | P0       | —              | Todo   |
-| FND-02 | Create .NET 10 solution and projects             | P0       | FND-01         | Todo   |
-| FND-03 | Create React + TypeScript + Vite app             | P0       | FND-01         | Todo   |
+| FND-01 | Initialize monorepo structure                    | P0       | —              | Done   |
+| FND-02 | Create .NET 10 solution and projects             | P0       | FND-01         | Done   |
+| FND-03 | Create React + TypeScript + Vite app             | P0       | FND-01         | Done   |
 | FND-04 | Configure Tailwind CSS and routing               | P0       | FND-03         | Todo   |
 | FND-05 | Configure PostgreSQL and EF Core                 | P0       | FND-02         | Todo   |
 | FND-06 | Configure Docker Compose                         | P0       | FND-05         | Todo   |
