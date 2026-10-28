@@ -70,22 +70,22 @@ PokéAPI
 
 ```text
 pokemon-games/
-├── frontend/
-│   ├── src/
-│   │   ├── app/
-│   │   ├── components/
-│   │   ├── features/
-│   │   │   ├── players/
-│   │   │   ├── games/
-│   │   │   └── hangman/
-│   │   └── shared/
-│   └── package.json
-│
-├── backend/
-│   ├── PokemonGames.Api/
-│   ├── PokemonGames.Application/
-│   ├── PokemonGames.Domain/
-│   └── PokemonGames.Infrastructure/
+├── src/
+│   ├── frontend/
+│   │   ├── src/
+│   │   │   ├── app/
+│   │   │   ├── components/
+│   │   │   ├── features/
+│   │   │   │   ├── players/
+│   │   │   │   ├── games/
+│   │   │   │   └── hangman/
+│   │   │   └── shared/
+│   │   └── package.json
+│   └── backend/
+│       ├── PokemonGames.Api/
+│       ├── PokemonGames.Application/
+│       ├── PokemonGames.Domain/
+│       └── PokemonGames.Infrastructure/
 │
 ├── tests/
 │   ├── PokemonGames.UnitTests/
